@@ -1,0 +1,10 @@
+/* Limpamos os estilos padrões do Vite (max-width, text-align center, padding) 
+  para que o Tailwind controle 100% do layout.
+*/
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
