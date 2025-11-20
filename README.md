@@ -42,4 +42,5 @@ Para testar o painel administrativo:
 - **Rota:** Clicar em "Admin" no menu ou ir para /admin-login
 - **Email:** `admin@sabor.com`
 - **Senha:** `123456`
-Desenvolvido com ❤️ por fc4code.
+
+Desenvolvido com por fc4code.
