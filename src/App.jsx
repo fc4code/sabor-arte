@@ -48,16 +48,17 @@ import {
 } from 'lucide-react';
 
 // ------------------------------------------------------------------
-// CONFIGURAÇÃO DO FIREBASE
+// CONFIGURAÇÃO DO FIREBASE (PROTEGIDO COM VARIÁVEIS DE AMBIENTE)
 // ------------------------------------------------------------------
+// Nota: No Vite, variáveis de ambiente devem começar com VITE_
 const firebaseConfig = {
-  apiKey: "AIzaSyAWB6PxT7squ4HnE_Ps1nXHcveO0317p9E",
-  authDomain: "site-portfolio-e48f7.firebaseapp.com",
-  projectId: "site-portfolio-e48f7",
-  storageBucket: "site-portfolio-e48f7.firebasestorage.app",
-  messagingSenderId: "54523234532",
-  appId: "1:54523234532:web:83a8d26df393f5160084f1",
-  measurementId: "G-0QNSG325N1"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
 // Inicialização Segura
